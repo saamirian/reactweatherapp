@@ -1,0 +1,23 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "React Weather App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saamirian/reactweatherapp.git"
+  },
+  "author": "saamirian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saamirian/reactweatherapp/issues"
+  },
+  "homepage": "https://github.com/saamirian/reactweatherapp#readme",
+  "devDependencies": {
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.4"
+  }
+}
