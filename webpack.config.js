@@ -32,24 +32,7 @@ module.exports = {
                   localIdentName: '[name]__[local]__[hash:base64:5]' 
                 },
               },
-              {
-                loader: require.resolve('postcss-loader'),
-                options: {
-                  ident: 'postcss',
-                  plugins: () => [
-                    require('postcss-flexbugs-fixes'),
-                    autoprefixer({
-                      browsers: [
-                        '>1%',
-                        'last 4 versions',
-                        'Firefox ESR',
-                        'not ie < 9', 
-                      ],
-                      flexbox: 'no-2009',
-                    }),
-                  ],
-                },
-              },
+              
                { 
                 loader: require.resolve('sass-loader'),
                 options: {
