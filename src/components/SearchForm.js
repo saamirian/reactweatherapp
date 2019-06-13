@@ -11,18 +11,20 @@ class SearchForm extends React.Component {
         
     render () {
         return <div>
-        <div>
+        
           
-       <form onSubmit={this.props.handleSubmit}>
+       <form onSubmit={this.props.handleSubmit} id="search-form">
            
-           <label htmlFor="location">PLease insert the location:</label>
-           <input name="location" placeholder= "Location" type="text" 
-           onChange={this.props.handleChange} value={this.props.location} />
-           <Link to={`/`}><button type="submit" onClick={this.props.handleClick}>Search</button></Link>
+           <div><label className="inline-labels" htmlFor="location">PLease insert the location:</label></div>
+           <div>
+           <input className="input-areas" name="location" placeholder= "Location" type="text" 
+           onChange={this.props.handleChange} value={this.props.location} /></div>
+           <div>
+           <Link to={`/`}><button id="submit" type="submit" onClick={this.props.handleClick}>Search</button></Link>
+           </div>
            
        </form>
-       </div>
-           </div>
+        </div>
     }
 }
 

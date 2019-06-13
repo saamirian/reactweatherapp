@@ -10,9 +10,7 @@ body {
     color: black;
     background-image: url("../images/sky.jpg");
   }
-  .page-container{
-   
-  }
+
 #header {
     background: rgb(28, 4, 85);
     color: white;
@@ -25,6 +23,62 @@ body {
     width: 60vw;
   }
 
+
+  .inline-labels {
+
+display: inline-block;
+
+  padding: 15px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+.input-areas {
+    height: 40px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #32e1ee;
+    border-radius: 5px;
+  }
+  #submit {
+    background-color: #70bfdf;
+    cursor: pointer;
+    border-radius: 4px;
+    color: black;
+    font-size: 1em;
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    border: 0px solid;
+    font-family: 'Helvetica' ,'Lato', sans-serif;
+  }
+
+  #submit:hover {
+      background-color: rgb(51, 75, 10);
+      color: white;
+      box-shadow: 5px 10px #888888;
+      padding-right: 25px;
+  }
+  .top-section {
+      display: flex;
+      justify-content: space-around;
+
+  align-items: center;
+      
+      
+    .top-section-items {
+      
+        width: 10%;
+        padding: 10px;
+    
+    }
+    #current-temp-c {
+        font-size: 60px;
+    }
+  }
+ 
+
+  
   .bottom-section {
     flex: 0 0 50%;
   }
