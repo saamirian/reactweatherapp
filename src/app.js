@@ -1,6 +1,7 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
 import Router from './Router'
+import SearchForm from "./components/SearchForm"
 
  
 const Navigation = (props) => <nav>
@@ -22,7 +23,7 @@ export class App extends React.Component {
         
             <Navigation />
             <Router />
-        
+            <SearchForm />
         </div>
     }    
 }
