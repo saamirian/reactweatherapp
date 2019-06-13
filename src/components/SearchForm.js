@@ -16,7 +16,7 @@ class SearchForm extends React.Component {
            <label>
            <input placeholder= "Location" type="text" 
            onChange={this.props.handleChange} value={this.props.location} />
-           <Link to={`/weather`}><button type="submit" onClick={this.props.handleClick}>Search</button></Link>
+           <Link to={`/`}><button type="submit" onClick={this.props.handleClick}>Search</button></Link>
            </label>
        </form>
        </div>
