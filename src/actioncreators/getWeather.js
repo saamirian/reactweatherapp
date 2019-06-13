@@ -13,12 +13,17 @@ export default function getWeather() {
         
         //if ( response && response.data.length > 0) {
          console.log("salam");
-        console.log(response.data.forecast.forecastday[2]);
+        console.log(response.data.forecast.forecastday[2].date);
         dispatch(loadWeatherLocation(response.data.location));
         dispatch(loadWeatherCurrent(response.data.current));
         dispatch(loadWeatherCondition(response.data.current.condition));
-        dispatch(loadWeatherForecast(response.data.forecastday));
-        //else { dispatch(loadWeather([]));
+        
+        let arr = [];
+            for (var key in response.data.forecast.forecastday) {
+              arr.push(response.data.forecast.forecastday[key]);
+}
+dispatch(loadWeatherForecast(arr));        
+//else { dispatch(loadWeather([]));
         //console.log("khodafez"); }
         
       });
@@ -46,6 +51,6 @@ export function loadWeatherCondition(response) {
 
       export function loadWeatherForecast(response) {
         return{
-            type:"LOAD_WEATHERFORCAST",
+            type:"LOAD_WEATHERFORECAST",
             payload: response };
           }

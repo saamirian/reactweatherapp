@@ -17,6 +17,11 @@ body {
 .logo {
     width: 60vw;
   }
+
+  .forecastcoloumn {
+      display: flex;
+      flex-direction: column;
+  }
   .page-container {
       
   }
