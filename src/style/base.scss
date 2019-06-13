@@ -78,9 +78,13 @@ display: inline-block;
   }
  
 
-  
+  .bottom {
+    display: flex;
+    justify-content: center;
+      align-items: center;
+  }
   .bottom-section {
-    flex: 0 0 50%;
+    flex: 0 0 45%;
     border: 1px solid green;
     width: 50%;
     margin: 20px;

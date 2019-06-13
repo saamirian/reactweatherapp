@@ -28,7 +28,7 @@ class Weather extends React.Component {
              <div id="current-temp-c" className="top-section-items"><h1>{current.temp_c}</h1></div>
              </div>
             
-             
+             <div className="bottom">
               <div className="bottom-section">
                   <div><h2>Forecast</h2><hr></hr></div>
             <ForecastArray forecastdays={forecast} />
@@ -37,6 +37,7 @@ class Weather extends React.Component {
               <div className="bottom-section">
               <div><h2>Details</h2><hr></hr></div>
               </div>
+            </div>
             </div>
      );
   
