@@ -17,6 +17,7 @@ export default function getWeather() {
         dispatch(loadWeatherLocation(response.data.location));
         dispatch(loadWeatherCurrent(response.data.current));
         dispatch(loadWeatherCondition(response.data.current.condition));
+        dispatch(loadWeatherForecast(response.data.forecastday));
         //else { dispatch(loadWeather([]));
         //console.log("khodafez"); }
         
@@ -41,3 +42,10 @@ export function loadWeatherCondition(response) {
         type:"LOAD_WEATHERCONDITION",
         payload: response };
       }
+
+
+      export function loadWeatherForecast(response) {
+        return{
+            type:"LOAD_WEATHERFORCAST",
+            payload: response };
+          }
