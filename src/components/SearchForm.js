@@ -12,12 +12,14 @@ class SearchForm extends React.Component {
     render () {
         return <div>
         <div>
+          
        <form onSubmit={this.props.handleSubmit}>
-           <label>
-           <input placeholder= "Location" type="text" 
+           
+           <label htmlFor="location">PLease insert the location:</label>
+           <input name="location" placeholder= "Location" type="text" 
            onChange={this.props.handleChange} value={this.props.location} />
            <Link to={`/`}><button type="submit" onClick={this.props.handleClick}>Search</button></Link>
-           </label>
+           
        </form>
        </div>
            </div>

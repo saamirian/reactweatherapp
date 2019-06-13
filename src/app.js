@@ -23,7 +23,7 @@ export class App extends React.Component {
                 <div className="logo">
                     <h1><i>Sa Weather!</i></h1>
                     <h6>The most accurate weather forecast</h6>
-                </div>
+            </div>
                 
                 <SearchForm />
             </div>
