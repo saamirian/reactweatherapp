@@ -30,10 +30,13 @@ class Weather extends React.Component {
             
              
               <div className="bottom-section">
+                  <div><h2>Forecast</h2><hr></hr></div>
             <ForecastArray forecastdays={forecast} />
           </div>
        
-              
+              <div className="bottom-section">
+              <div><h2>Details</h2><hr></hr></div>
+              </div>
             </div>
      );
   

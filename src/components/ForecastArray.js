@@ -12,9 +12,10 @@ export default class ForcastArray extends React.Component {
     return (
       <div className="bottom-container">
         <div className="inner-container">
+       
           {forecastdays &&
             forecastdays.map((day, idx) => {
-              return <Forcastday day={day.day} key={idx} />;
+              return <Forcastday day={day} key={idx} />;
             })}
         </div>
       </div>
