@@ -16,7 +16,8 @@ class Weather extends React.Component {
         console.log(this.props.loadWeatherForecast[0]);
             return (
        
-            <div>
+            <div className="page-container"> 
+            <div className="top-section">
             <div><h1>{loc.name}</h1> <h5>{this.props.loadWeatherLocation.region}</h5>
             <h6>{loc.localtime}</h6>
             <h4>{this.props.loadWeatherLocation.country}</h4>
@@ -26,12 +27,12 @@ class Weather extends React.Component {
              
              </div>
              <div><h1>{current.temp_c}</h1> </div>
-              <div>
-              <div className="forecastcoloumn">
+             </div>
+              <div className="bottom-section">
             <ForecastArray forecastdays={forecast} />
           </div>
        
-              </div>
+              
             </div>
      );
   
