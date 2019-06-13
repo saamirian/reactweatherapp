@@ -22,8 +22,9 @@ export class App extends React.Component {
         
         
             <Navigation />
-            <Router />
             <SearchForm />
+            <Router />
+            
         </div>
     }    
 }

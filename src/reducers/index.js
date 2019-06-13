@@ -3,6 +3,7 @@ import location from "./location";
 import loadWeatherLocation from "./loadWeatherLocation";
 import loadWeatherCurrent from "./loadWeatherCurrent";
 import loadWeatherCondition from "./loadWeatherCondition"
+import days from "./days"
 
 
 
@@ -11,6 +12,7 @@ export default combineReducers({
   location,
   loadWeatherLocation,
   loadWeatherCurrent,
-  loadWeatherCondition
+  loadWeatherCondition,
+  days
   
 });

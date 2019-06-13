@@ -1,4 +1,5 @@
 import React from "react"
+import Weather from "../components/Weather"
 
 class HomePage extends React.Component {
     
@@ -6,7 +7,7 @@ class HomePage extends React.Component {
 
         return (
         <div>
-          Hiii
+          <Weather />
            
            </div>  
         );
