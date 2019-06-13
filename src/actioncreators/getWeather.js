@@ -1,10 +1,11 @@
 import axios from "axios";
 const WEATHER_KEY = "e3fc4da5f1d44435816110411193105";
-const days = 10;
+
 
 export default function getWeather() {
     return function(dispatch, getState) {
       const { location } = getState();
+      const { days } = getState();
       
       const URL = `http://api.apixu.com/v1/forecast.json?key=${WEATHER_KEY}  &q=${location} &days=${days}`;
       return axios.get(URL)
