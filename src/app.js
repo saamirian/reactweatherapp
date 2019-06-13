@@ -14,17 +14,24 @@ const Navigation = (props) => <nav>
 
 export class App extends React.Component {
     render () {
-        return <div>
+        return <div className="page-container">
+            <div >
             <div>
-                Hello
-
+        <Navigation />
+        </div>
+            <div id="header">
+                <div className="logo">
+                    <h1><i>Sa Weather!</i></h1>
+                    <h6>The most accurate weather forecast</h6>
+                </div>
+                
+                <SearchForm />
             </div>
         
-        
-            <Navigation />
-            <SearchForm />
+        </div>
+        <div>
             <Router />
-            
+            </div>  
         </div>
     }    
 }

@@ -1,6 +1,22 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Helvetica' ,'Lato', sans-serif;
+}
+
 body {
     margin: 0;
-    background: black;
+    background: white;
     box-sizing: border-box;
-    color: red;
+    color: black;
+  }
+#header {
+    background: rgb(61, 60, 60);
+    color: white;
+    display: flex;
+}
+.logo {
+    width: 60vw;
+  }
+  .page-container {
+      
   }
