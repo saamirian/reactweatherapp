@@ -20,26 +20,9 @@ module.exports = {
             'css-loader'
           ]
         },
-          {
-            test: /\.scss$/, 
-            use: [
-              require.resolve('style-loader'),
-              {
-                loader: require.resolve('css-loader'),
-                options: {
-                  importLoaders: 1,
-                  modules: true,  
-                  localIdentName: '[name]__[local]__[hash:base64:5]' 
-                },
-              },
-              
-               { 
-                loader: require.resolve('sass-loader'),
-                options: {
-                  includePaths: [path.styles]
-                }
-              }
-            ],
+        {
+            test: /\.scss$/,
+            use: ['style-loader', 'css-loader', 'sass-loader']
           },
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
