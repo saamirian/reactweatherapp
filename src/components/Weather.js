@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { loadWeatherLocation, loadWeatherForecast } from "../actioncreators/getWeather"
 import {loadWeatherCondition, loadWeatherCurrent } from "../actioncreators/getWeather"
 import ForecastArray from "./ForecastArray"
+import  Details from "./Details"
 
 
 
@@ -36,6 +37,8 @@ class Weather extends React.Component {
        
               <div className="bottom-section">
               <div><h2>Details</h2><hr></hr></div>
+              <Details current={current} condition={condition} />
+              
               </div>
             </div>
             </div>

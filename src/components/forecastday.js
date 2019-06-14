@@ -11,7 +11,7 @@ export default class Forcastday extends React.Component {
     return (
       <div className="forcastday-container">
         
-        <div className="date">{day.date}</div>
+        <div className="date">Date: {day.date}</div>
         <div className="image">
           <img src={day.day.condition.icon} />
         </div>
