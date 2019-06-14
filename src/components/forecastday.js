@@ -11,11 +11,11 @@ export default class Forcastday extends React.Component {
     return (
       <div className="forcastday-container">
         
-        <div>{day.date}</div>
+        <div className="date">{day.date}</div>
         <div className="image">
           <img src={day.day.condition.icon} />
         </div>
-        <div className="text">Average temprature: {day.day.avgtemp_c}</div>
+        <div className="text">Average: {day.day.avgtemp_c}</div>
         <div className="muted-text">{day.day.condition.text}</div>
       </div>
     );
